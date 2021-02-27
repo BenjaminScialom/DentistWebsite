@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="site web du Dr. Maurice Scialom">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Chirurgien-dentiste Cavalaire</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preload-content">
+        <div id="dento-load"></div>
+    </div>
+</div>
+
+<!--  Header Area Start  -->
+<header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Top Content -->
+                <div class="col-6 col-md-9 col-lg-8">
+                    <div class="top-header-content">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=" Adresse"><i
+                                class="fa fa-map-marker"></i> <span>Résidence du port Entrée A, 83240, Cavalaire-sur-Mer, France</span></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i
+                                class="fa fa-envelope"></i> <span>doc.m.scialom@gmail.com</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand"> <img src="{% static 'website/img/core-img/favicon.ico' %}" alt=""> </a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="{% url 'accueil' %}">Accueil</a></li>
+                                <li><a href="{% url 'apropos' %}">Qui sommes-nous?</a></li>
+                                <li><a href="{% url 'contact' %}">Trouvez-nous</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+
+                    <!-- Booking Now Button -->
+                    <a href="{% url 'rdv' %}" class="btn dento-btn booking-btn">Rendez-vous</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+<!-- ***** Footer Area Start ***** -->
+<footer class="footer-area bg-img bg-gradient-overlay"
+        style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <!-- Single Footer Widget -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-footer-widget">
+                    <a href="./home.html" class="d-block mb-4"> <img
+                            src="{% static 'website/img/core-img/favicon.ico' %}" alt=""> </a>
+                    <p>Pour plus d'information n'hésiter pas à nous contacter par email ou téléphone.</p>
+                    <div class="footer-contact">
+                        <p><i class="icon_pin"></i> Résidence du port Entrée A, 83820, Cavalaire-sur-Mer, France</p>
+                        <p><i class="icon_phone"></i>(+33)-04-94-15-45-86</p>
+                        <p><i class="icon_mail"></i> doc.m.scialom@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Footer Widget -->
+            <div class="col-md-6 col-sm-3 col-md-6">
+                <div class="single-footer-widget">
+                    <!-- Widget Title -->
+                    <h5 class="widget-title">Horaires</h5>
+
+                    <!-- Opening Hours -->
+                    <ul class="opening-hours">
+                        <li><span>lundi</span> <span>9h-12h</span></li>
+                        <li><span>mardi</span><span>9h-12h & 14h-17h30</span></li>
+                        <li><span>mercredi</span><span>9h-12h & 14h-17h30</span></li>
+                        <li><span>jeudi</span> <span>9h-12h</span></li>
+                        <li><span>vendredi</span> <span>9h-12h</span></li>
+                        <li><span>Samedi</span> <span>Fermé</span></li>
+                        <li><span>Dimanche</span> <span>Fermé</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+        <div class="copywrite-content">
+            <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                All rights reserved | Inspired</i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- ***** Footer Area End ***** -->
+
+<!-- ******* All JS ******* -->
+<!-- jQuery js -->
+<script src="{% static 'website/js/jquery.min.js' %}"></script>
+<!-- Popper js -->
+<script src="{% static 'website/js/popper.min.js' %}"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<!-- All js -->
+<script src="{% static 'website/js/dento.bundle.js' %}"></script>
+<!-- Active js -->
+<script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+
+</body>
+
+</html>

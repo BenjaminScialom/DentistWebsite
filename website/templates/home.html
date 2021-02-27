@@ -1,0 +1,374 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!--  Welcome Area Start -->
+    <section class="welcome-area">
+        <!-- Welcome Slides -->
+        <div class="welcome-slides owl-carousel">
+
+            <!-- Single Welcome Slide -->
+            <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax"
+                 style="background-image: url({% static 'websiteimg/bg-img/1.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Welcome Text -->
+                            <div class="welcome-text text-center">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Vous méritez le plus beau des sourires
+                                    !</h2>
+                                <p data-animation="fadeInUp" data-delay="300ms">Soins, prothèses dentaires,
+                                    implantologie</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown"
+                                       data-delay="700ms">Contacter-nous</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax"
+                 style="background-image: url({% static 'website/img/bg-img/2.jpg' %});">>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Welcome Text -->
+                            <div class="welcome-text text-center">
+                                <h2 data-animation="fadeInDown" data-delay="100ms">Croquez la vie à belles dents!</h2>
+                                <p data-animation="fadeInDown" data-delay="300ms">Nous vous proposons un large panel de
+                                    solutions</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown"
+                                       data-delay="700ms">Contacter-nous</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Welcome Area End  -->
+
+    <!-- About Us Area Start  -->
+    <section class="dento-about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- About Us Thumbnail -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-thumbnail mb-50">
+                        <img src="{% static 'website/img/bg-img/salle2.jpg' %}" alt="no photo loaded">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-content mb-50">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <h2>En quelques mots</h2>
+                            <div class="line"></div>
+                        </div>
+
+
+                        <!-- Single Skills Area -->
+                        <h6>Expérience internationale</h6>
+                        <p> Le Docteur Scialom a travaillé plusieurs années en Suisse, répondant ainsi aux attentes
+                            d'une patientèle exigeante.Il a bénéficié d'un enseignement de pointe en réhabilitation
+                            occlusale et en implantologie en France, aux Etats-Unis, au Canada et en Suisse.
+                        </p>
+
+
+                        <!-- Single Skills Area -->
+                        <h6>Equipement moderne</h6>
+                        <p>
+                        <ul>
+                            <p>- Bloc opératoire indépendant<br>
+                                - Salle de radiologie<br>
+                                - Salle de stérilisation
+                        </ul>
+                        </p>
+
+                        <h6>Implantologie</h6>
+                        <p>Diplômé de l'université Paris-Garancière, le docteur Scialom pratique l'implantologie depuis
+                            de nombreuses années. Dans ce domaine, il est également spécialisé en greffes osseuses et
+                            soulevés de sinus. Il pratique la chirurgie à quatre mains avec son assistante.</p>
+
+                        <h6>Hygiène</h6>
+                        <p>
+                            Le bloc opératoire et les pièces de soins sont stérilisés quotidiennement selon les
+                            protocoles imposés en hygiène dentaire.<br>
+                            <b>En raison de la crise sanitaire (Covid-19), ces protocoles sont renforcés selon les
+                                normes fixées par le Conseil de l'Ordre.</b>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****** About Us Area End ****** -->
+
+    <div class="container">
+        <div class="dento-border clearfix"></div>
+    </div>
+
+    <!-- Cool Facts Area Start -->
+    <section class="dento-cta-area">
+        <div class="row">
+            <!-- Single Dentist Area -->
+            <div class="col-md-3 col-md-3">
+                <div class="single-dentist-area mb-100">
+                    <img src="{% static 'website/img/bg-img/diplome1.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-3">
+                <div class="single-dentist-area mb-100">
+                    <img src="{% static 'website/img/bg-img/diplome2.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-3">
+                <div class="single-dentist-area mb-100">
+                    <img src="{% static 'website/img/bg-img/diplome3.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-3">
+                <div class="single-dentist-area mb-100">
+                    <img src="{% static 'website/img/bg-img/diplome4.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cool Facts Area End -->
+
+    <!-- Dento Service Area Start -->
+    <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix"
+             style="background-image: url({% static 'website/img/bg-img/13.jpg' %});">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Service Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-content mb-30">
+                        <!-- Section Heading -->
+                        <div class="section-heading white">
+                            <h2>Nos services</h2>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="row">
+
+
+                            <!-- Single Service -->
+                            <div class="col-6 col-md-4">
+                                <div class="single-service mb-70">
+                                    <img src="{% static 'website/img/core-img/s7.png' %}" alt="">
+                                    <h6>Soins dentaires</h6>
+                                </div>
+                            </div>
+
+                            <!-- Single Service -->
+                            <div class="col-6 col-md-4">
+                                <div class="single-service mb-70">
+                                    <img src="{% static 'website/img/core-img/s8.png' %}" alt="">
+                                    <h6>Prothèses</h6>
+                                </div>
+                            </div>
+
+                            <!-- Single Service -->
+                            <div class="col-6 col-md-4">
+                                <div class="single-service mb-70">
+                                    <img src="{% static 'website/img/core-img/s10.png' %}" alt="">
+                                    <h6>Implantologie</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="dento-video-area mb-100">
+                        <video width="100%" height="100%" controls>
+                            <source src="{% static "website/img/bg-img/video_cabinet.mp4" %}" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dento Service Area End -->
+
+    <!-- Dento Pricing Table Area Start -->
+    <section class="dento-pricing-table-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Prix</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="dento-price-table table-responsive">
+                        <table class="table table-borderless mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col">service</th>
+                                <th scope="col">Prix</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Couronne céramo-métal</th>
+                                <td> à partir de 500€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Couronne céramo-céramique</th>
+                                <td> à partir de 800€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Couronne céramique sur implant avec pilier</th>
+                                <td>à partir de 700€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Stellite</th>
+                                <td>à partir de 1600€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Implant</th>
+                                <td>à partir de 1000€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Devis implantaire</th>
+                                <td>100€ (déduit si devis accepté)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Soins</th>
+                                <td>
+                                    <a href="https://www.previssima.fr/question-pratique/consultation-chez-un-dentiste-quels-sont-les-remboursements-de-la-securite-sociale.html">voir
+                                        lien (conventionné sécurité sociale)</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="more-btn text-center mt-50">
+                        <a>
+                            Toute demande de devis fait l'objet d'une consultation au Cabinet sur rendez-vous.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dento Pricing Table Area End -->
+
+    <!-- Book An Oppointment Area Start -->
+    <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix"
+             style="background-image: url({% static 'website/img/bg-img/12.jpg' %});"> >
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center white">
+                        <h2>Prendre rendez-vous</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Appointment Form -->
+                    <div class="appointment-form">
+                        <div class="row">
+                            <div class="col-md-6 col-md-6">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn dento-btn" style="align-content: center"><a
+                                            href="{% url 'rdv' %}">Rendez-vous par email</a></button>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-md-6">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn dento-btn" style="align-content: center">
+                                        <a href="tel:1234567">Téléphoner</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Book An Oppointment Area End -->
+
+    <!-- ***** Dento Dentist Area Start ***** -->
+    <section class="dentist-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Notre équipe</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Dentist Area -->
+                <div class="col-md-4 col-md-4">
+                    <div class="single-dentist-area mb-100">
+                        <img src="{% static 'website/img/bg-img/maurice.jpg' %}" alt="">
+                        <!-- Dentist Content -->
+                        <div class="dentist-content">
+                            <!-- Dentist Info -->
+                            <div class="dentist-info bg-gradient-overlay">
+                                <h5>Docteur Maurice Scialom</h5>
+                                <p>Chirurgien-dentiste implantologiste</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Dentist Area -->
+                <div class="col-md-4 col-md-4">
+                    <div class="single-dentist-area mb-100">
+                        <img src="{% static 'website/img/bg-img/both.jpg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-4">
+                    <div class="single-dentist-area mb-100">
+                        <img src="{% static 'website/img/bg-img/adelaide2.jpg' %}" alt="">
+                        <!-- Dentist Content -->
+                        <div class="dentist-content">
+
+                            <!-- Dentist Info -->
+                            <div class="dentist-info bg-gradient-overlay">
+                                <h5>Adélaïde</h5>
+                                <p>Assistante dentaire diplômée</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Rendez-vous
+{% endblock %}
+
+{% block content %}
+    <!-- Book An Oppointment Area Start -->
+    <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix"
+             style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center white">
+                        <h2>Demande de rendez-vous</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    {% if nom %}
+                    <!-- Default message after send mail Area Start -->
+                    <div style="text-align: center;">
+                        <h2 style="color:white">Merci! {{ nom }}!</h2>
+                        <p style="color:white;">Nous avons reçu votre message. Nous vous répondrons dans les plus brefs délais.</p>
+                    </div>
+                    <br><br><br>
+
+                    <!-- Default message after send mail Area End -->
+                    {% else %}
+                    <!-- Appointment Form -->
+                    <div class="appointment-form">
+                        <form action="{% url 'rdv' %}" method="post">
+                            {% csrf_token %}
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="nom" class="form-control" placeholder="Nom et Prénom"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="tel" class="form-control" placeholder="Téléphone"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="email" name="email" class="form-control" placeholder="Email"
+                                               required>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <select name="moment" class="form-control">
+                                            <option value="" disabled selected>matin ou après-midi</option>
+                                            <option value="matin">matin</option>
+                                            <option value="après-midi">Après-midi</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <select name="day" class="form-control">
+                                            <option value="" disabled selected>Jour</option>
+                                            <option value="lundi">lundi</option>
+                                            <option value="mardi">mardi</option>
+                                            <option value="mercredi">mercredi</option>
+                                            <option value="jeudi">jeudi</option>
+                                            <option value="vendredi">vendredi</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group mb-30">
+                                        <textarea name="message" class="form-control"
+                                                  placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn dento-btn">Envoyer</button>
+                                </div>
+
+                                <br><br>
+                                <br><br>
+                                <p style="color:white ;">
+                                    <strong>Note:</strong> Ce rendez-vous n'est pas confirmé. Nous essayerons de
+                                    respecter vos disponibilités.
+                                    Le rendez-vous vous sera confirmé dès que possible. Merci de votre compréhension.
+                                </p>
+                            </div>
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book An Oppointment Area End -->
+{% endblock %}
